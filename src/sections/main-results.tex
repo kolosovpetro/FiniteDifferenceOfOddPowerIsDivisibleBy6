@@ -1,31 +1,25 @@
-We show that for every odd power $P$ and non-negative integer $N$ it is always true that
-
+We show that for every odd power $P$ and non-negative integer $N$ holds
 \begin{align*}
-(N+1)
-    ^P - N^P - 1 \equiv 0 \bmod{6}
+    (N+1)^P - N^P - 1 \equiv 0 \bmod{6}
 \end{align*}
-
 To prove the statement we have to show that for every non-negative integer $N$ and odd power $P$
-
 \begin{align*}
     (N+1)^P - N^P - 1
 \end{align*}
-
 is always divisible by both 2 and 3.
 For every non-negative integer $N$, either $N$ is even, and $N+1$ is odd, and vise versa.
-It means that $(N+1)^P - N^P$ is always a positive odd number.
+It means that $(N+1)^P - N^P$ is always a positive odd integer.
 Therefore,
 \begin{align*}
     (N+1)^P - N^P - 1 \equiv 0 \bmod{2}
 \end{align*}
 
 Let be $F(N) = (N+1)^P - N^P - 1$, then we want to show that for every non-negative $N$
-
 \begin{align*}
     F(N) \equiv 0 \bmod{3}
 \end{align*}
+Since that every integer $N$ is congruent to either 0, 1, or 2 modulo 3, we check each case.
 
-Since every integer $N$ is congruent to either 0, 1, or 2 modulo 3, we check each case.
 Consider the case $N \equiv 0 \bmod 3$
 \begin{align*}
     N &\equiv 0 \bmod 3 \\
@@ -46,7 +40,7 @@ Consider the case $N \equiv 1 \bmod 3$
     (N+1)^p &\equiv 2^p \bmod 3
 \end{align*}
 
-Since $p$ is odd, $2^p \equiv 2 \bmod 3$, so
+Since $p$ is odd, then $2^p \equiv 2 \bmod 3$, hence
 \begin{align*}
     f(N) \equiv 2 - 1 - 1 = 0 \bmod 3
 \end{align*}
@@ -56,6 +50,14 @@ Consider the case  $N \equiv 2 \bmod 3$
     N &\equiv 2 \bmod 3 \\
     N+1 &\equiv 0 \bmod 3 \\
     N^p &\equiv 2^p \equiv 2 \bmod 3 \\
-    (N+1)^p &\equiv 0^p = 0 \bmod 3 \\
-    f(N) &\equiv 0 - 2 - 1 = -3 \equiv 0 \bmod 3
+    (N+1)^p &\equiv 0^p = 0 \bmod 3
+\end{align*}
+Hence,
+\begin{align*}
+    f(N) \equiv 0 - 2 - 1 = -3 \equiv 0 \bmod 3
+\end{align*}
+
+Therefore, for every odd power $P$ and non-negative integer $N$ holds
+\begin{align*}
+(N+1)^P - N^P - 1 \equiv 0 \bmod{6}
 \end{align*}
